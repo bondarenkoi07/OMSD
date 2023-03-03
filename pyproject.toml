@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "mosd"
+version = "0.1.0"
+description = ""
+authors = ["bondaenko.ilya <bondaenko.ilya@wb.ru>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+jupyter = "^1.0.0"
+matplotlib = "^3.7.0"
+black = "23.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
