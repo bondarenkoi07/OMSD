@@ -59,7 +59,7 @@ class TwoIndependent:
     @staticmethod
     def silvester_criteria(minors: list[int]) -> str:
         power = reduce(mul, minors)
-
+        # print(f"minor={minors}")
         if power > 0:
             return "Положительно определена"
 
@@ -78,6 +78,8 @@ class TwoIndependent:
 
         if reduce(lambda a, b: a and b, map(lambda x: x <= 0, minors)):
             return "Неположительно определена"
+
+        return "не имеет экстремума в данной точке"
 
 
 class ThreeIndependent(TwoIndependent):
